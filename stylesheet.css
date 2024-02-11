@@ -1,45 +1,70 @@
-*
-{
+/* Common CSS Sections */
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    -outline: 0;
+    font-family: 'Courier New', Courier, monospace;
+
 }
-body
-{
-    color:#ededed
+
+html, body
+{font-size: 14px;
+    font-weight: 400;
+    background: #000000;
+    color: #fff
+
 }
-.header
+.container {
+    width: 1100px;
+    margin: 0px auto;
+    display: table;
+}
+
+.width-33
 {
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 33%;
+    float: left;
+}
+
+.width-66 
+{
+    width: 66%;
+    float: left;
+
+}
+
+/* Menu Section */
+
+.main-panel
+{
     width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
-   z-index: 100;
-    
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    height: 100vh;
 }
+
 .logo {
-    position: relative;
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
+    font-size: 40px;
     font-weight: 600;
+}
+
+.span-col {
+    color: #ffbf35
+}
+
+nav
+{
+    float: right;
 
 }
-.navbar a {
-    display: inline-block;
-    font-size: 15px;
-    color: #f56e6e;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: 0.3s;
 
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+    color: white;
 }
